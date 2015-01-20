@@ -1,5 +1,7 @@
-Abortire in Italia *Abortion in Italy*
+Abortire in Italia
 ===
+
+##*Abortion in Italy*
 
 In Italy, under the Law, abortion is legal during the first 90 days of pregnancy. 
 Medical and paramedical personnel can be opposed to abortion on moral or religious grounds, they are called *conscientious objectors* and can be exempted from performing or assisting in the procedure of an abortion.  
