@@ -1,0 +1,19 @@
+{{#extend "layout"}}
+    {{#append "head"}}
+         <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDEu1DJ2wz41lhnZxh5gIJQXEkR2EhhRfY"> </script>
+        <link rel="stylesheet" href="assets/css/home.css" />
+    {{/append}}
+
+    {{#replace "body"}}
+        {{> header}}
+
+        <h2>Welcome Home of {{projectName}}</h2>      
+
+    {{/replace}}
+
+    {{#prepend "footer"}}
+        <script type="text/javascript" src="javascript/app.js"> </script>
+    {{/prepend}}
+    
+    {{> footer}}
+{{/extend}}
