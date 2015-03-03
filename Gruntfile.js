@@ -39,10 +39,10 @@ module.exports = function(grunt) {
       home: {
         files: {
           //'dist/home.html': 'src/home.html'
-          'dist/*.html': 'src/*.hsb'
+          'index.html': 'templates/*.hsb'
         },
         options: {
-          partials: ['src/partials/*.hbs', 'src/partials/*.md', 'src/layout.html'],
+          partials: ['templates/partials/*.hbs', 'templates/partials/*.md', 'templates/layout.html'],
           context: {
             title: 'Abortire In Italia',
             projectName: 'Abortire in italia Project',
