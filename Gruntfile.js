@@ -23,7 +23,7 @@ module.exports = function(grunt) {
         separator: '\n/**********/\n'
       },
       dist: {
-        src: ['javascript/libs/*.js', 'javascript/scripts/*.js'],
+        src: ['node_modules/jquery/dist/jquery.min.js', 'javascript/scripts/*.js'],
         dest: 'javascript/app.js'
       }
     },

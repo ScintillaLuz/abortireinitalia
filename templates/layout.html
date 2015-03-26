@@ -10,18 +10,16 @@
 </head>
 
 <body>
-  <div class="site">
-    <div class="site-hd" role="banner">
-      {{#block "header"}}
-          <h1>{{title}}</h1>
+    {{#block "header"}}
+        <h1>{{title}}</h1>
+        {{> header}}
+    {{/block}}
+
+    <div class="container" role="main">
+      {{#block "container"}}
       {{/block}}
     </div>
 
-    <div class="site-bd" role="main">
-      {{#block "body"}}
-          <h2>Hello World</h2>
-      {{/block}}
-    </div>
 
     <div class="site-ft" role="contentinfo">
       {{#block "copy"}}
@@ -31,10 +29,9 @@
   </div>
 
   {{#block "footer"}}
-    <p>footer</p>
+    {{> footer}}
   {{/block}}
   
-  {{> footer}}
 </body>
 </html>
 
