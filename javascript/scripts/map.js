@@ -1,19 +1,19 @@
-function initialize() {
+$( document ).ready(function() {
 
   var myLatlng = new google.maps.LatLng(45.465142,9.189749,5.465142);
   var pharmacyMarkerCoordinate = new google.maps.LatLng(45.484642, 9.187689);
 
   var mapOptions = {
-    center: myLatlng,
-    zoom: 10
+  center: myLatlng,
+  zoom: 10
   };
   var map = new google.maps.Map(document.getElementById('map-canvas'),
-      mapOptions);
+    mapOptions);
 
   setMarkersHospitals(map, hospitals);
   setMarkersPharmacy(map, pharmacy);
 
-}
+});
 
 var hospitals = [
   ['San Raffaele', 45.506783, 9.265623, 4, 'ciao1'],
@@ -93,4 +93,4 @@ var setMarkersPharmacy = function(map, locations){
   }
 };
 
-google.maps.event.addDomListener(window, 'load', initialize);
+//google.maps.event.addDomListener(window, 'load', initialize);

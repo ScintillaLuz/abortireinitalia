@@ -8,8 +8,9 @@
         <meta name="description" content="">
   
         <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDEu1DJ2wz41lhnZxh5gIJQXEkR2EhhRfY"></script>
+        <script type="text/javascript" src="../javascript/concat-map.js"> </script>
+        <!-- map.js need to be separate from others and to be the last one in order to run properly-->
         <script type="text/javascript" src="../javascript/scripts/map.js"> </script>
-
         <link rel="stylesheet" href="../map.css" />
     
 </head>
@@ -24,6 +25,15 @@
       
 
         <div id="map-canvas"></div>
+
+        <div id="searchContainer">
+         <form id="searchForm" method="post">
+          <input id="search" type="text" name="q" />
+          <button id="searchbutton" type="submit" value="search"/>
+         </form>
+        </div>
+
+        <div id="results"></div>
         
     
     </div>
@@ -37,7 +47,6 @@
   </div>
 
   
-        <script type="text/javascript" src="../javascript/app.js"> </script>
     
     <footer>footer partial</footer>
 

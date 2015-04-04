@@ -22,10 +22,16 @@ module.exports = function(grunt) {
       options: {
         separator: '\n/**********/\n'
       },
-      dist: {
-        src: ['node_modules/jquery/dist/jquery.min.js', 'javascript/scripts/*.js'],
-        dest: 'javascript/app.js'
-      }
+
+      basic: {
+        src: ['node_modules/jquery/dist/jquery.min.js', 'javascript/scripts/nextSection.js'],
+        dest: 'javascript/common.js',
+      },
+
+      map: {
+        src: ['node_modules/jquery/dist/jquery.min.js', 'javascript/scripts/search.js'],
+        dest: 'javascript/concat-map.js',
+      },
     },
     uglify: {
     //minify js files
