@@ -39,7 +39,7 @@ module.exports = function(grunt) {
       home: {
         files: {
           //'dist/home.html': 'src/home.html'
-          'index.html': 'templates/*.hsb'
+          'dist/*.html': 'templates/*.hsb',
         },
         options: {
           partials: ['templates/partials/*.hbs', 'templates/partials/*.md', 'templates/layout.html'],

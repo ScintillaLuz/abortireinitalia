@@ -8,7 +8,7 @@
     {{/replace}}
 
     {{#prepend "footer"}}
-        <script type="text/javascript" src="javascript/app.js"> </script>
+        <script type="text/javascript" src="../javascript/app.js"> </script>
     {{/prepend}}
 
 {{/extend}}
